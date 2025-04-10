@@ -1,9 +1,9 @@
 import Markdown from "react-markdown";
-function ChefSeekRecipe(){
+function ChefSeekRecipe(props){
 
     return (
         <section id="suggested-recipe" className="suggested-recipe bg-linear-to-tl text-[#333] from-[#e4c4d0] to-[#C7DB9C] shadow text-sm/normal animate mt-8 mx-auto md:w-[480px] h-full w-full rounded-md p-12">
-            <h1>Chef Seek Recommends</h1>
+            <h1 className="text-4xl my-4">Chef Seek Recommends</h1>
             <Markdown>{props.recipe}</Markdown>
         </section>
     )
