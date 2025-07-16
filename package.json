@@ -19,7 +19,11 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^10.0.1",
-    "tailwindcss": "^4.0.3"
+    "tailwindcss": "^4.0.3",
+    "openai": "latest",
+    "@azure-rest/ai-inference": "latest",
+    "@azure/core-auth": "latest",
+    "@azure/core-sse": "latest"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
