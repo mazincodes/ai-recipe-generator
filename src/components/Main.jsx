@@ -24,7 +24,7 @@ function Main(mode){
 
     const inputIngredients = document.querySelector('.input-ingredients');
     if(inputIngredients){
-        // inputIngredients.value = ''
+        inputIngredients.value = ''
         inputIngredients.blur();
     }
 
