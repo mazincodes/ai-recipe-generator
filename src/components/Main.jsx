@@ -13,7 +13,7 @@ function Main(mode){
         setMyIngredients(prevIngredients => [...prevIngredients, newIngredient])
     }
 
-    const [recipe, setRecipe] = useState("");
+    const [recipe, setRecipe] = useState();
 
 
     async function getRecipe(){
