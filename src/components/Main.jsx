@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ChefSeekRecipe from "./ChefSeekRecipe";
 import Ingredients from "./IngredientsList";
-import { getRecipeFromMistral } from "../ai";
+import { getRecipeFromAi } from "../ai";
 function Main(mode){
     const [myIngredients, setMyIngredients] = useState([]);
     
@@ -17,7 +17,7 @@ function Main(mode){
 
 
     async function getRecipe(){
-        const recipeMarkdown = await getRecipeFromMistral(myIngredients)
+        const recipeMarkdown = await getRecipeFromAi(myIngredients)
         console.log(recipeMarkdown);
         setRecipe(recipeMarkdown)
     }

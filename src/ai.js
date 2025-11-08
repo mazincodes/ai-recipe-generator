@@ -12,9 +12,9 @@ Try using bullet points for lists and make sure that the 'Ingredients' and 'Inst
 // const hf = new HfInference(import.meta.env.VITE_API_KEY)
 const token = import.meta.env.VITE_API_KEY
 const endpoint = "https://models.github.ai/inference";
-const model = "openai/gpt-4.1-nano";
+const model = "xai/grok-3-mini";
 
-export async function getRecipeFromMistral(ingredientsArr) {
+export async function getRecipeFromAi(ingredientsArr) {
     const client = ModelClient(endpoint, new AzureKeyCredential(token));
     const ingredientsString = ingredientsArr.join(", ")
     try {
