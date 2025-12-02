@@ -9,7 +9,7 @@ function Main(mode){
         e.preventDefault();
         const formEl = e.currentTarget;
         const formData= new FormData(formEl);
-        const newIngredient = formData.get('ingredient');
+        const newIngredient = formData.get();
         setMyIngredients(prevIngredients => [...prevIngredients, newIngredient])
     }
 
