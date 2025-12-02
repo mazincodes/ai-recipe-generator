@@ -1,7 +1,7 @@
 function Ingredients(props, colorLight, colorDark, mode){
-    const ingredientsList = props.myIngredients.map(function (ingredient, index) {
+    const ingredientsList = props.myIngredients.map((ingredient, index) => {
         return (
-            <ul key={ingredient}>
+            <ul key={index++}>
                 <li className="marker:text-[#77906d] list-disc">{ingredient.toLowerCase()}</li>
             </ul>
         )})
