@@ -3,10 +3,6 @@ import ChefSeekRecipe from "./ChefSeekRecipe";
 import Ingredients from "./IngredientsList";
 import { getRecipeFromAi } from "../ai";
 function Main(mode){
-    const id = (num) => {
-        let count;
-        count = num++;
-    }
 
     const [myIngredients, setMyIngredients] = useState([]);
 
