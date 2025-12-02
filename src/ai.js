@@ -30,7 +30,7 @@ export async function getRecipeFromAi(ingredientsArr) {
             }
         })
          if (isUnexpected(response)) {
-            throw new Error(response.body.error);
+            throw response.body.error;
         }
         return response.body.choices[0].message.content
     } catch (err) {
