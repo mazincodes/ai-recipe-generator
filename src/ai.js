@@ -7,8 +7,8 @@ The recipe can include addtional ingredients they didn't mention, but try not to
 Format your response in markdown to make it easier to render to a web page. Also avoid using symbols like # and |.
 Try using bullet points for lists and make sure that the 'Ingredients' and 'Instructions' headings in bold text`
 
-// const hf = new HfInference(import.meta.env.VITE_API_KEY)
-const token = import.meta.env.VITE_API_KEY
+// const hf = new HfInference(import.meta.env.REACT_APP_API_KEY)
+const token = import.meta.env.REACT_APP_API_KEY
 const endpoint = "https://models.github.ai/inference";
 const model = "xai/grok-3-mini";
 
