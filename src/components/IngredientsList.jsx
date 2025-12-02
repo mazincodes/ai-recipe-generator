@@ -1,9 +1,9 @@
 function Ingredients(props, colorLight, colorDark, mode){
     const ingredientsList = props.myIngredients.map(function (ingredient, index) {
         return (
-            <ol key={index}>
+            <ul key={String(index)}>
                 <li className="marker:text-[#77906d] list-disc">{ingredient.toLowerCase()}</li>
-            </ol>
+            </ul>
         )})
     function remove(e){
         e.preventDefault();
